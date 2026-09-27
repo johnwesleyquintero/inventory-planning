@@ -139,12 +139,24 @@ Create a new Google Spreadsheet with the following tabs (sheets):
 1. Open your Google Spreadsheet
 2. Go to **Extensions → Apps Script**
 3. Delete any existing code
-4. Paste the script from **Settings → Google Apps Script Setup** in the app (or use the one below)
-5. Click **Deploy → New deployment**
-6. Select type: **Web app**
-7. Set "Execute as": **Me**
-8. Set "Who has access": **Anyone**
-9. Click **Deploy** and copy the Web App URL
+4. Paste the script from **Settings → Google Apps Script Code** in the app (click "Show Apps Script Code" → "Copy to Clipboard")
+5. **Run `setupSheets()`** — creates all 5 tabs with formatted headers, frozen header row, and proper column widths
+6. **Run `seedSampleData()`** — populates all sheets with realistic Hungry Artisan sample data
+7. Click **Deploy → New deployment**
+8. Select type: **Web app**
+9. Set "Execute as": **Me**
+10. Set "Who has access": **Anyone**
+11. Click **Deploy** and copy the Web App URL
+
+### Available Apps Script Functions
+
+| Function | Purpose |
+|----------|---------|
+| `setupSheets()` | Creates all 5 tabs with headers, dark formatting, frozen header row, and auto-resized columns. Safe to run multiple times — existing sheets are preserved. |
+| `seedSampleData()` | Populates all sheets with realistic Hungry Artisan sample data (8 inventory items, 6 shipments, 6 forecasts, 6 freight quotes, 12 milestones). |
+| `resetAll()` | Clears all data from all sheets (preserves headers) and re-seeds with fresh sample data. Use this to start over. |
+| `doPost(e)` | API endpoint — handles `test`, `read`, `write`, `update`, `delete` actions. |
+| `doGet(e)` | Health check endpoint — returns API status and list of available sheets. |
 
 ### Step 3: Configure the App
 
