@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { TabType } from './types';
 import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';

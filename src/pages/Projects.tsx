@@ -1,3 +1,4 @@
+import React from 'react';
 import { mockMilestones } from '../services/googleSheets';
 import StatusBadge from '../components/StatusBadge';
 import { Target, Calendar, User, CheckCircle2, Clock, AlertCircle } from 'lucide-react';

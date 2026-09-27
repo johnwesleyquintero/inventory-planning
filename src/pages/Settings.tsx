@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { sheetsService } from '../services/googleSheets';
 import { SheetConfig } from '../types';
 import { Database, Link, CheckCircle, XCircle, Copy, ExternalLink, Code } from 'lucide-react';

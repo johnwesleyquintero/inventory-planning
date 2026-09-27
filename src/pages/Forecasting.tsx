@@ -1,3 +1,4 @@
+import React from 'react';
 import { mockForecast } from '../services/googleSheets';
 import StatusBadge from '../components/StatusBadge';
 import { AlertTriangle, TrendingUp, Clock, ArrowRight } from 'lucide-react';

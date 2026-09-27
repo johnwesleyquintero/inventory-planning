@@ -1,3 +1,4 @@
+import React from 'react';
 import { mockInventory, mockShipments, mockForecast, mockMilestones } from '../services/googleSheets';
 import StatusBadge from '../components/StatusBadge';
 import {

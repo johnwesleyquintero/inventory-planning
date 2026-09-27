@@ -1,3 +1,4 @@
+import React from 'react';
 import { TabType } from '../types';
 import {
   LayoutDashboard,

@@ -1,3 +1,4 @@
+import React from 'react';
 import { mockQuotes } from '../services/googleSheets';
 import StatusBadge from '../components/StatusBadge';
 import { Ship, DollarSign, Clock, CheckCircle, AlertTriangle, TrendingDown } from 'lucide-react';

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { mockInventory } from '../services/googleSheets';
 import StatusBadge from '../components/StatusBadge';
 import { Search, Filter, RefreshCw, Download } from 'lucide-react';
